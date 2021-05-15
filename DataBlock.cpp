@@ -32,3 +32,31 @@ string DataBlock::toHex(string s)
     }
     return hex;
 }
+
+string DataBlock::permutation(vector<int>table, int new_size)
+{
+    string final="";
+    for(int i=0; i<new_size;i++)
+    {
+        final+=data[table[i]-1];
+    }
+    return final;
+
+}
+
+string DataBlock::shift( int n)
+{
+    string final="";
+   
+	for(int i=0; i<data.length()-n;i++)
+	{
+		final+=data[ i+n ];
+	}
+	for(int i=0; i<n;i++)
+	{
+		final+= data[i];       
+	}
+    return final;
+}
+
+
