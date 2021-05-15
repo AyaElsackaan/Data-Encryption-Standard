@@ -1,2 +1,2 @@
 # DES-Encryption
-This is a simple C++ project that applies Data Encryption Standard (DES).
+This is a simple C++ project that applies Data Encryption Standard algorithm (DES).
